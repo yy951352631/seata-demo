@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: account-feign  #应用名称(注册服务时所用的名字)  重要
+server:
+  port: 9999
+feign:
+    hystrix:
+      enabled: true
+
+eureka:
+    client:
+      register-with-eureka: false
+      service-url:
+         defaultZone: http://eureka7001.com:7001/eureka/
+
